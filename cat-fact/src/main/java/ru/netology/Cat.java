@@ -6,10 +6,10 @@ public class Cat {
     private final Status status;
     private final String type;
     private final boolean deleted;
-    private final String _id;
+    private final String id;
     private final String user;
     private final String text;
-    private final int __v;
+    private final int v;
     private final String source;
     private final String updatedAt;
     private final String createdAt;
@@ -19,10 +19,10 @@ public class Cat {
             @JsonProperty("status") Status status,
             @JsonProperty("type") String type,
             @JsonProperty("deleted") boolean deleted,
-            @JsonProperty("_id") String _id,
+            @JsonProperty("_id") String id,
             @JsonProperty("user") String user,
             @JsonProperty("text") String text,
-            @JsonProperty("__v") int __v,
+            @JsonProperty("__v") int v,
             @JsonProperty("source") String source,
             @JsonProperty("updatedAt") String updatedAt,
             @JsonProperty("createdAt") String createdAt,
@@ -31,10 +31,10 @@ public class Cat {
         this.status = status;
         this.type = type;
         this.deleted = deleted;
-        this._id = _id;
+        this.id = id;
         this.user = user;
         this.text = text;
-        this.__v = __v;
+        this.v = v;
         this.source = source;
         this.updatedAt = updatedAt;
         this.createdAt = createdAt;
@@ -53,8 +53,8 @@ public class Cat {
         return deleted;
     }
 
-    public String get_id() {
-        return _id;
+    public String getId() {
+        return id;
     }
 
     public String getUser() {
@@ -65,8 +65,8 @@ public class Cat {
         return text;
     }
 
-    public int get__v() {
-        return __v;
+    public int getV() {
+        return v;
     }
 
     public String getSource() {
@@ -92,10 +92,10 @@ public class Cat {
                 "\n     status = " + status +
                 "\n     type = '" + type + "'" +
                 "\n     deleted = '" + deleted + "'" +
-                "\n     _id = '" + _id + "'" +
+                "\n     id = '" + id + "'" +
                 "\n     user = '" + user + "'" +
                 "\n     text = '" + text + "'" +
-                "\n     __v = '" + __v + "'" +
+                "\n     v = '" + v + "'" +
                 "\n     source = '" + source + "'" +
                 "\n     updatedAt = '" + updatedAt + "'" +
                 "\n     createdAt = '" + createdAt + "'" +

@@ -82,7 +82,7 @@ public class MainNasa {
         File newFile = new File(nameFile);
         try {
             if (newFile.createNewFile()) {
-                System.out.println("Cоздан файл '" + nameFile + "'.");
+                System.out.println("\n\nCоздан файл '" + nameFile + "'.");
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());
